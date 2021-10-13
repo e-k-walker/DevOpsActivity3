@@ -6,7 +6,7 @@ name: CI-Checks
 on:
     # Triggers to work flow on push or pull request events but only for the release branch
     push:
-     branches: [ release ] 
+     branches: [ development ] 
      
     workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
