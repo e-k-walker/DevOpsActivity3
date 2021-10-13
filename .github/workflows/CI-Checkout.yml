@@ -29,5 +29,5 @@ jobs:
       run:
        echo Testing Project 1
        cd code/CodeCoverage_Sample
-       mvn --batch-mode --update-snapshits clean verify
+       mvn --batch-mode --update-snapshots clean verify
        cd ../..
