@@ -6,7 +6,8 @@ name: CI-Checks
 on:
     # Triggers to work flow on push or pull request events but only for the release branch
     push:
-     branches: [ development ]
+     branches: [ development ] 
+     
     workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -29,5 +30,5 @@ jobs:
       run:
        echo Testing Project 1
        cd code/CodeCoverage_Sample
-       mvn --batch-mode --update-snapshits verify
+       mvn --batch-mode --update-snapshits clean verify
        cd ../..
